@@ -1,0 +1,7 @@
+- if object.errors.any?
+  .flash-message.alert#error_explanation
+    %strong= t('generic.validation_errors', count: object.errors.count)
+- object.errors[:base].each do |error|
+  - if error != t('auth.rucaptcha_invalid')
+    .flash-message.alert
+      %strong= error

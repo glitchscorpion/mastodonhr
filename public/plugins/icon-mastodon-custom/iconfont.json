@@ -1,0 +1,44 @@
+{
+  "id": "1809229",
+  "name": "mastodon全局",
+  "font_family": "mastodon-custom",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "26267572",
+      "name": "gitee",
+      "font_class": "gitee",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "12309605",
+      "name": "at_circle_fill",
+      "font_class": "at_circle_fill",
+      "unicode": "33",
+      "unicode_decimal": 51
+    },
+    {
+      "icon_id": "16355368",
+      "name": "微博超话",
+      "font_class": "super-topic",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "14606901",
+      "name": "quotation-marks",
+      "font_class": "quotation-marks-reverse",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "14606896",
+      "name": "quotation-marks",
+      "font_class": "quotation-marks",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    }
+  ]
+}

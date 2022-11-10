@@ -1,0 +1,36 @@
+- content_for :header_tags do
+  = render_initial_state
+  = javascript_pack_tag 'public', crossorigin: 'anonymous'
+
+- content_for :content do
+  .public-layout
+    - unless @hide_navbar
+      .container
+        %nav.header
+          .nav-left
+            = link_to root_url, class: 'brand' do
+              = logo_as_symbol(:wordmark)
+
+            - unless whitelist_mode?
+              = link_to t('directories.directory'), explore_path, class: 'nav-link optional' if Setting.profile_directory
+              = link_to t('about.about_this'), about_more_path, class: 'nav-link optional'
+              = link_to t('about.apps'), 'https://help.fediverse.cloud/help-center/articles/1/2/14/mastodon-apps', class: 'nav-link optional'
+
+          .nav-center
+
+          .nav-right
+            - if user_signed_in?
+              = link_to t('settings.back'), root_url, class: 'nav-link nav-button webapp-btn'
+            - else
+              = link_to_login t('auth.login'), class: 'webapp-btn nav-link nav-button'
+              = link_to t('auth.register'), available_sign_up_path, class: 'webapp-btn nav-link nav-button'
+
+    .container= yield
+
+    .container
+      .footer
+        .grid
+          .column-2
+            = link_to logo_as_symbol, root_url, class: 'brand'
+
+= render template: 'layouts/application'

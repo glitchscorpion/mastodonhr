@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "mastodon-custom"; /* Project id 1809229 */
+  src: url('iconfont.eot?t=1657188224111'); /* IE9 */
+  src: url('iconfont.eot?t=1657188224111#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+       url('iconfont.woff?t=1657188224111') format('woff'),
+       url('iconfont.ttf?t=1657188224111') format('truetype'),
+       url('iconfont.svg?t=1657188224111#mastodon-custom') format('svg');
+}
+
+.mastodon-custom {
+  font-family: "mastodon-custom" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-at_circle_fill:before {
+  content: "\33";
+}
+
+.icon-super-topic:before {
+  content: "\e6a9";
+}
+
+.icon-quotation-marks-reverse:before {
+  content: "\e6a8";
+}
+
+.icon-quotation-marks:before {
+  content: "\e6a7";
+}
+

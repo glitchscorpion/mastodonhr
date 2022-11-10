@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": "./app/javascript/mastodon",
+    "jsx": "react",
+    "paths": {
+      "mastodon/*": ["./*"],
+      "components/*": ["./components/*"],
+      "images/*": ["../images/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "build"]
+}
